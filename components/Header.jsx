@@ -41,7 +41,7 @@ const Header = () => {
         {/* Profile Pic */}
         <Image onClick={signOut} className='rounded-full cursor-pointer' src={session.data.user.image} width={40}
         height={40} layout="fixed"/>
-        <p className=" whitespace-nowrap font-semibold pr-3 ml-1">{session.data.user.name}</p>
+        <p className=" whitespace-nowrap font-semibold pr-3 ml-1 hidden sm:inline">{session.data.user.name}</p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
         <BellIcon className="icon" />
